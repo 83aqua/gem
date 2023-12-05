@@ -17,6 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
+admin.site.site_header = "INICAI Admin"
+admin.site.site_title = "INICAI Admin Portal"
+admin.site.index_title = "Welcome INICAI"
+
 urlpatterns = [
     path('polls/',include('polls.urls')),
     path("admin/", admin.site.urls),
